@@ -1,0 +1,97 @@
+[debug] [2024-05-07T04:00:44.390Z] ----------------------------------------------------------------------
+[debug] [2024-05-07T04:00:44.391Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2024-05-07T04:00:44.391Z] CLI Version:   11.0.1
+[debug] [2024-05-07T04:00:44.391Z] Platform:      darwin
+[debug] [2024-05-07T04:00:44.391Z] Node Version:  v17.0.1
+[debug] [2024-05-07T04:00:44.392Z] Time:          Tue May 07 2024 09:30:44 GMT+0530 (India Standard Time)
+[debug] [2024-05-07T04:00:44.392Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-07T04:00:44.395Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-07T04:00:44.395Z] > authorizing via signed-in user (vincentsamuelpaul@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/vincentsamuelpaul/vincent_ideas/businesses/igsharing/frontend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-05-07T04:01:06.278Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-05-07T04:01:06.278Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"igsharingtestv1","name":"igsharingtestv1"}
+[debug] [2024-05-07T04:01:09.081Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-05-07T04:01:09.081Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.9035157378085192755"}
+[debug] [2024-05-07T04:01:09.083Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9035157378085192755 [none]
+[debug] [2024-05-07T04:01:11.493Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9035157378085192755 200
+[debug] [2024-05-07T04:01:11.493Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9035157378085192755 {"name":"operations/cp.9035157378085192755"}
+[debug] [2024-05-07T04:01:11.995Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-05-07T04:01:11.996Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9035157378085192755 [none]
+[debug] [2024-05-07T04:01:13.941Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9035157378085192755 200
+[debug] [2024-05-07T04:01:13.942Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.9035157378085192755 {"name":"operations/cp.9035157378085192755","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"7349097175","projectId":"igsharingtestv1","lifecycleState":"ACTIVE","name":"igsharingtestv1","createTime":"2024-05-07T04:01:10.854292Z"}}
+[debug] [2024-05-07T04:01:13.944Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/igsharingtestv1:addFirebase [none]
+[debug] [2024-05-07T04:01:18.039Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/igsharingtestv1:addFirebase 200
+[debug] [2024-05-07T04:01:18.039Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/igsharingtestv1:addFirebase {"name":"operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm"}
+[debug] [2024-05-07T04:01:18.040Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm [none]
+[debug] [2024-05-07T04:01:19.793Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm 200
+[debug] [2024-05-07T04:01:19.793Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm {"name":"operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm"}
+[debug] [2024-05-07T04:01:20.295Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-05-07T04:01:20.296Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm [none]
+[debug] [2024-05-07T04:01:22.131Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm 200
+[debug] [2024-05-07T04:01:22.132Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm {"name":"operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm"}
+[debug] [2024-05-07T04:01:23.133Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-05-07T04:01:23.134Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm [none]
+[debug] [2024-05-07T04:01:24.577Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm 200
+[debug] [2024-05-07T04:01:24.577Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm {"name":"operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm"}
+[debug] [2024-05-07T04:01:26.579Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-05-07T04:01:26.579Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm [none]
+[debug] [2024-05-07T04:01:28.696Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm 200
+[debug] [2024-05-07T04:01:28.696Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm {"name":"operations/workflows/MjkyMjliZDYtMDQxNy00MmNiLTkxZGQtNzEwMGIzYWI1NDZm","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"igsharingtestv1","projectNumber":"7349097175","displayName":"igsharingtestv1","name":"projects/igsharingtestv1","resources":{"hostingSite":"igsharingtestv1"}}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: igsharingtestv1
+[info]    - Project Name: igsharingtestv1
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/igsharingtestv1/overview
+[info] i  Using project igsharingtestv1 (igsharingtestv1) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] ✔  Wrote public/404.html 
+[debug] [2024-05-07T04:01:58.807Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-05-07T04:01:59.462Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-05-07T04:01:59.462Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.11.1","browserURL":"https://www.gstatic.com/firebasejs/10.11.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.11.1/firebase.tgz"},"live":{"version":"10.11","browserURL":"https://www.gstatic.com/firebasejs/live/10.11/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.11/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.11.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.11.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.11.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.11.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.11.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.11.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.11.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.11.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.11.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.11.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming /Users/vincentsamuelpaul/vincent_ideas/businesses/igsharing/frontend is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=124614381&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-05-07T04:02:15.077Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"e0a5c82b98038ba6e615","redirect_uri":"http://localhost:9005","state":"124614381"}
+[debug] [2024-05-07T04:02:16.710Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Tue, 07 May 2024 04:02:16 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"83e0857bb147114dda3d0ccd12f511e7\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","content-security-policy":"default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com api.githubcopilot.com objects-origin.githubusercontent.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"FA0F:21B427:1FB1B04:23B442F:6639A7C8"}
+[debug] [2024-05-07T04:02:16.730Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-05-07T04:02:19.415Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-05-07T04:02:19.422Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"VincentSamuelPaul","id":90044187,"node_id":"MDQ6VXNlcjkwMDQ0MTg3","avatar_url":"https://avatars.githubusercontent.com/u/90044187?v=4","gravatar_id":"","url":"https://api.github.com/users/VincentSamuelPaul","html_url":"https://github.com/VincentSamuelPaul","followers_url":"https://api.github.com/users/VincentSamuelPaul/followers","following_url":"https://api.github.com/users/VincentSamuelPaul/following{/other_user}","gists_url":"https://api.github.com/users/VincentSamuelPaul/gists{/gist_id}","starred_url":"https://api.github.com/users/VincentSamuelPaul/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/VincentSamuelPaul/subscriptions","organizations_url":"https://api.github.com/users/VincentSamuelPaul/orgs","repos_url":"https://api.github.com/users/VincentSamuelPaul/repos","events_url":"https://api.github.com/users/VincentSamuelPaul/events{/privacy}","received_events_url":"https://api.github.com/users/VincentSamuelPaul/received_events","type":"User","site_admin":false,"name":"Vincent Paul","company":null,"blog":"https://linktr.ee/vincentsamuelpaul","location":null,"email":null,"hireable":null,"bio":"Learning full stack to build software to bring a change in the world","twitter_username":"vincent120305","public_repos":10,"public_gists":0,"followers":4,"following":3,"created_at":"2021-09-03T11:57:53Z","updated_at":"2024-03-30T14:54:57Z","private_gists":0,"total_private_repos":3,"owned_private_repos":3,"disk_usage":17176,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as VincentSamuelPaul 
+[info] 
